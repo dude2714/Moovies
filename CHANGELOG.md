@@ -1,5 +1,11 @@
 ﻿# Changelog
 
+## v3.6.12 - 2026-06-03T23:00:00Z
+- APK: Terrarium-TV-v3.6.12.apk
+- Size: 17526715 bytes
+- SHA-256: 9FBD4971CD75B439841E5941EB636EF0B73F38DCD36661D8C0CFE98A7987F2AD
+- Notes: Fix startup crash on some layout variants by null-checking Year button binding in MainActivity.
+
 ## v3.6.11 - 2026-06-03T22:49:35Z
 - APK: Terrarium-TV-v3.6.11.apk
 - Size: 17526715 bytes
@@ -71,6 +77,8 @@
 - Size: 16975982 bytes
 - SHA-256: 2877CB1E695D888C5AEB51AD0D41D4CEB219228185EB6237C37369A6B57D5A35
 - Notes: Initial standalone Terrarium TV package from CyberFlix TV [3.6.0].apk
+
+
 
 
 

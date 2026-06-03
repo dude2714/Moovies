@@ -11555,9 +11555,13 @@
 
     move-result-object v0
 
+    if-eqz v0, :cond_year_btn
+
     iget-object v1, p0, Lcom/bweather/forecast/MainActivity;->ʽᵢ:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    :cond_year_btn
 
     const/4 v4, 0x5
 
