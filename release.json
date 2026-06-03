@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "v3.6.4",
-    "updatedUtc":  "2026-06-03T04:51:47Z",
-    "apkFile":  "Terrarium-TV-v3.6.4.apk",
+    "version":  "v3.6.5",
+    "updatedUtc":  "2026-06-03T05:21:44Z",
+    "apkFile":  "Terrarium-TV-v3.6.5.apk",
     "sizeBytes":  17326011,
-    "sha256":  "DAC7DB489721BD7904E280516350FC61589D9D2B23C927ABE5CC27FA3B7A5BBF",
-    "notes":  "Cache-busted release filename; AllDebrid button remains beside Real-Debrid in Settings \u003e Account."
+    "sha256":  "DF215605CE335D6AB245A5B0545C9C02479541A01BB7A700037292E928A50B9A",
+    "notes":  "Fixed app identity: package name set to com.terrariumtv.app; AllDebrid button visible in Settings"
 }
