@@ -1,5 +1,11 @@
 ﻿# Changelog
 
+## v3.6.7 - 2026-06-03T20:26:05Z
+- APK: Terrarium-TV-v3.6.7.apk
+- Size: 17326011 bytes
+- SHA-256: C3E934203E6A6CDD7BBF7E19B133D2DBC249E7A3E10C2D85731319C384D8826F
+- Notes: Implemented Torbox auth flow in Settings (API key login/logout + validation); updated account buttons and provider-aware dialogs.
+
 ## v3.6.6 - 2026-06-03T20:07:15Z
 - APK: Terrarium-TV-v3.6.6.apk
 - Size: 17326011 bytes
@@ -41,6 +47,8 @@
 - Size: 16975982 bytes
 - SHA-256: 2877CB1E695D888C5AEB51AD0D41D4CEB219228185EB6237C37369A6B57D5A35
 - Notes: Initial standalone Terrarium TV package from CyberFlix TV [3.6.0].apk
+
+
 
 
 
