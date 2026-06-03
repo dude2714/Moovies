@@ -1,5 +1,11 @@
 ﻿# Changelog
 
+## v3.6.11 - 2026-06-03T22:49:35Z
+- APK: Terrarium-TV-v3.6.11.apk
+- Size: 17526715 bytes
+- SHA-256: CA9081D2E6FE807BF3F4DD96108AB6E870300D8CBD44036ACF5D7A2189087246
+- Notes: Main top bar: added visible Year button beside Search and wired it to Year Filter dialog.
+
 ## v3.6.10 - 2026-06-03T22:19:33Z
 - APK: Terrarium-TV-v3.6.10.apk
 - Size: 17326011 bytes
@@ -65,6 +71,8 @@
 - Size: 16975982 bytes
 - SHA-256: 2877CB1E695D888C5AEB51AD0D41D4CEB219228185EB6237C37369A6B57D5A35
 - Notes: Initial standalone Terrarium TV package from CyberFlix TV [3.6.0].apk
+
+
 
 
 

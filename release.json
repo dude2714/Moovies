@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "v3.6.10",
-    "updatedUtc":  "2026-06-03T22:19:33Z",
-    "apkFile":  "Terrarium-TV-v3.6.10.apk",
-    "sizeBytes":  17326011,
-    "sha256":  "54F2CD73CE97F92DC299619F2FD49AA52D8E24519FD9BCB3E7CA5140810A24AA",
-    "notes":  "Updated app menu background image using New Folder fanart.jpg."
+    "version":  "v3.6.11",
+    "updatedUtc":  "2026-06-03T22:49:35Z",
+    "apkFile":  "Terrarium-TV-v3.6.11.apk",
+    "sizeBytes":  17526715,
+    "sha256":  "CA9081D2E6FE807BF3F4DD96108AB6E870300D8CBD44036ACF5D7A2189087246",
+    "notes":  "Main top bar: added visible Year button beside Search and wired it to Year Filter dialog."
 }
