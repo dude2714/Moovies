@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "v3.6.9",
-    "updatedUtc":  "2026-06-03T21:54:37Z",
-    "apkFile":  "Terrarium-TV-v3.6.9.apk",
+    "version":  "v3.6.10",
+    "updatedUtc":  "2026-06-03T22:19:33Z",
+    "apkFile":  "Terrarium-TV-v3.6.10.apk",
     "sizeBytes":  17326011,
-    "sha256":  "AD5C9F444A0117F5A2308D4B3AA9B2D8C6D022FEA4CCC8D3D655686AED83B641",
-    "notes":  "TV focus fix: account buttons now show focus highlight and are D-pad clickable (RD/AD/Premiumize/Torbox)."
+    "sha256":  "54F2CD73CE97F92DC299619F2FD49AA52D8E24519FD9BCB3E7CA5140810A24AA",
+    "notes":  "Updated app menu background image using New Folder fanart.jpg."
 }

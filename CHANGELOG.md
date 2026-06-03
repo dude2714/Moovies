@@ -1,5 +1,11 @@
 ﻿# Changelog
 
+## v3.6.10 - 2026-06-03T22:19:33Z
+- APK: Terrarium-TV-v3.6.10.apk
+- Size: 17326011 bytes
+- SHA-256: 54F2CD73CE97F92DC299619F2FD49AA52D8E24519FD9BCB3E7CA5140810A24AA
+- Notes: Updated app menu background image using New Folder fanart.jpg.
+
 ## v3.6.9 - 2026-06-03T21:54:37Z
 - APK: Terrarium-TV-v3.6.9.apk
 - Size: 17326011 bytes
@@ -59,6 +65,8 @@
 - Size: 16975982 bytes
 - SHA-256: 2877CB1E695D888C5AEB51AD0D41D4CEB219228185EB6237C37369A6B57D5A35
 - Notes: Initial standalone Terrarium TV package from CyberFlix TV [3.6.0].apk
+
+
 
 
 
