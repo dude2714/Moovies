@@ -25,6 +25,12 @@ From the repo root, run:
 .\scripts\Publish-New-TerrariumVersion.ps1 -NewApkPath "C:\path\to\new\Terrarium TV.apk" -Version "v3.6.1" -Notes "Release notes here"
 ```
 
+To publish with a versioned file name (recommended to avoid download cache issues):
+
+```powershell
+.\scripts\Publish-New-TerrariumVersion.ps1 -NewApkPath "C:\path\to\new\Terrarium TV.apk" -Version "v3.6.1" -OutputApkFileName "Terrarium-TV-v3.6.1.apk" -Notes "Release notes here"
+```
+
 Then commit and push:
 
 ```powershell

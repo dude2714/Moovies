@@ -60,17 +60,23 @@
   <main class="card">
     <h1>Terrarium TV</h1>
     <p>Standalone APK download page.</p>
-    <a class="btn" href="Terrarium%20TV.apk" download>Download Terrarium TV APK</a>
+    <a class="btn" id="downloadBtn" href="Terrarium%20TV.apk" download>Download Terrarium TV APK</a>
     <section class="meta" id="meta">Loading release metadata...</section>
   </main>
 
   <script>
     async function loadRelease() {
       const meta = document.getElementById('meta');
+      const downloadBtn = document.getElementById('downloadBtn');
       try {
         const res = await fetch('release.json', { cache: 'no-store' });
         if (!res.ok) throw new Error('release.json not found');
         const r = await res.json();
+        if (r.apkFile) {
+          const encodedFile = encodeURIComponent(r.apkFile).replace(/%2F/g, '/');
+          downloadBtn.href = `${encodedFile}?t=${Date.now()}`;
+          downloadBtn.setAttribute('download', r.apkFile);
+        }
         meta.innerHTML = [
           `<div><strong>Version:</strong> ${r.version ?? '-'}</div>`,
           `<div><strong>Updated (UTC):</strong> ${r.updatedUtc ?? '-'}</div>`,

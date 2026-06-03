@@ -5,13 +5,15 @@ param(
     [Parameter(Mandatory = $true)]
     [string]$Version,
 
-    [string]$Notes = ""
+    [string]$Notes = "",
+
+    [string]$OutputApkFileName = 'Terrarium TV.apk'
 )
 
 $ErrorActionPreference = 'Stop'
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
-$targetApk = Join-Path $repoRoot 'Terrarium TV.apk'
+$targetApk = Join-Path $repoRoot $OutputApkFileName
 $releaseFile = Join-Path $repoRoot 'release.json'
 $changelogFile = Join-Path $repoRoot 'CHANGELOG.md'
 
@@ -34,7 +36,7 @@ $updatedUtc = (Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')
 $release = [ordered]@{
     version = $Version
     updatedUtc = $updatedUtc
-    apkFile = 'Terrarium TV.apk'
+    apkFile = $OutputApkFileName
     sizeBytes = [int64]$apk.Length
     sha256 = $sha
     notes = $Notes
@@ -48,7 +50,7 @@ if (-not (Test-Path -LiteralPath $changelogFile)) {
 
 $entry = @(
     "## $Version - $updatedUtc"
-    "- APK: Terrarium TV.apk"
+    "- APK: $OutputApkFileName"
     "- Size: $($apk.Length) bytes"
     "- SHA-256: $sha"
 )
