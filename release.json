@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "v3.6.14",
-    "updatedUtc":  "2026-06-04T00:24:44Z",
+    "version":  "v3.6.15",
+    "updatedUtc":  "2026-06-04T01:01:33Z",
     "apkFile":  "Terrarium TV.apk",
     "sizeBytes":  17526715,
-    "sha256":  "22B04105364AD3507C0B57FD36E47DB3A9500BCE3286BF89DD0006132E86D12B",
-    "notes":  "UI: debrid badge labels/colors for easy identification (RD blue, AD light green, Torbox light orange, PM yellow)."
+    "sha256":  "BB1036BF55ADDE4A3A4738E17A5F588EB78133439647364D85CFC6976D264DAE",
+    "notes":  "Hotfix: keep debrid resolution intact while preserving non-debrid links; provider badge styling made visual-only."
 }

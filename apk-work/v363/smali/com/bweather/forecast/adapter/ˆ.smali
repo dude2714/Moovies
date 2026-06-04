@@ -228,9 +228,21 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
+    const v4, 0x7fffffff
+
     invoke-virtual {p1}, Lcom/bweather/forecast/model/Link;->getThirdparty()Ljava/lang/String;
 
     move-result-object v0
+
+    invoke-virtual {p1}, Lcom/bweather/forecast/model/Link;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-nez v2, :goto_provider_done
 
     const-string v1, "ALL"
 
@@ -240,135 +252,95 @@
 
     if-eqz v1, :cond_provider_rd
 
-    const-string v0, "AD"
+    const-string v2, "[ALL]"
 
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setThirdparty(Ljava/lang/String;)V
+    const-string v5, "[AD]"
 
-    const v0, -0x641c86
-
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setColorCode(I)V
-
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setColorTwo(I)V
-
-    invoke-static {p3}, Lcom/bweather/forecast/adapter/ˆ$ʻ;->ʼ(Lcom/bweather/forecast/adapter/ˆ$ʻ;)Landroid/widget/TextView;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Lcom/bweather/forecast/model/Link;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v2, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    const v4, -0x641c86
 
     goto :goto_provider_done
 
     :cond_provider_rd
-    const-string v1, "DEB"
+    const-string v2, "DEB"
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_provider_pm
+    if-eqz v2, :cond_provider_pm
 
-    const-string v0, "RD"
+    const-string v2, "[DEB]"
 
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setThirdparty(Ljava/lang/String;)V
+    const-string v5, "[RD]"
 
-    const v0, -0xb25801
-
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setColorCode(I)V
-
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setColorTwo(I)V
-
-    invoke-static {p3}, Lcom/bweather/forecast/adapter/ˆ$ʻ;->ʼ(Lcom/bweather/forecast/adapter/ˆ$ʻ;)Landroid/widget/TextView;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Lcom/bweather/forecast/model/Link;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v2, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    const v4, -0xb25801
 
     goto :goto_provider_done
 
     :cond_provider_pm
-    const-string v1, "PREMIUMIZE"
+    const-string v2, "PREMIUMIZE"
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_provider_torbox
+    if-eqz v2, :cond_provider_torbox
 
-    const-string v0, "PM"
+    const-string v2, "[PREMIUMIZE]"
 
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setThirdparty(Ljava/lang/String;)V
+    const-string v5, "[PM]"
 
-    const v0, -0x1f9a
-
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setColorCode(I)V
-
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setColorTwo(I)V
-
-    invoke-static {p3}, Lcom/bweather/forecast/adapter/ˆ$ʻ;->ʼ(Lcom/bweather/forecast/adapter/ˆ$ʻ;)Landroid/widget/TextView;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Lcom/bweather/forecast/model/Link;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v2, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    const v4, -0x1f9a
 
     goto :goto_provider_done
 
     :cond_provider_torbox
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    const-string v2, "TORBOX"
 
-    move-result v1
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    if-nez v1, :goto_provider_done
+    move-result v2
 
-    const-string v1, "TORBOX"
+    if-nez v2, :cond_provider_torbox_apply
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    const-string v2, "TOR"
 
-    move-result v1
-
-    if-nez v1, :cond_provider_torbox_apply
-
-    const-string v1, "TOR"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :goto_provider_done
 
     :cond_provider_torbox_apply
-    const-string v0, "TORBOX"
+    const-string v0, "[TOR]"
 
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setThirdparty(Ljava/lang/String;)V
+    const-string v2, "[TORBOX]"
 
-    const v0, -0x3d86
+    invoke-virtual {v1, v0, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setColorCode(I)V
+    move-result-object v1
 
-    invoke-virtual {p1, v0}, Lcom/bweather/forecast/model/Link;->setColorTwo(I)V
+    const v4, -0x3d86
+
+    :goto_provider_done
 
     invoke-static {p3}, Lcom/bweather/forecast/adapter/ˆ$ʻ;->ʼ(Lcom/bweather/forecast/adapter/ˆ$ʻ;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/bweather/forecast/model/Link;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    :goto_provider_done
 
     const/4 v3, 0x2
 
@@ -464,6 +436,22 @@
     const/4 v3, 0x5
 
     invoke-virtual {p3, p1}, Landroid/widget/TextView;->setTextColor(I)V
+
+    const v0, 0x7fffffff
+
+    if-eq v4, v0, :goto_1
+
+    invoke-static {p3}, Lcom/bweather/forecast/adapter/ˆ$ʻ;->ʼ(Lcom/bweather/forecast/adapter/ˆ$ʻ;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setTextColor(I)V
+
+    invoke-static {p3}, Lcom/bweather/forecast/adapter/ˆ$ʻ;->ʻ(Lcom/bweather/forecast/adapter/ˆ$ʻ;)Landroid/widget/TextView;
+
+    move-result-object p3
+
+    invoke-virtual {p3, v4}, Landroid/widget/TextView;->setTextColor(I)V
 
     :goto_1
     return-object p2
