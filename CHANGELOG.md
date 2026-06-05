@@ -1,5 +1,11 @@
 ﻿# Changelog
 
+## v3.6.21 - 2026-06-05T00:49:58Z
+- APK: Terrarium-TV-v3.6.21.apk
+- Size: 17526715 bytes
+- SHA-256: 61C1D5197253C3DEA01413001FC7CAFF53E6DA9BC580AD19CC459D06BA3BDCE8
+- Notes: RD parser hardening: normalize payload (data or top-level) and accept download/link/url shapes; callback always forwards payload for parse. Non-debrid behavior unchanged.
+
 ## v3.6.20 - 2026-06-05T00:32:12Z
 - APK: Terrarium-TV-v3.6.20.apk
 - Size: 17526715 bytes
@@ -119,6 +125,8 @@
 - Size: 16975982 bytes
 - SHA-256: 2877CB1E695D888C5AEB51AD0D41D4CEB219228185EB6237C37369A6B57D5A35
 - Notes: Initial standalone Terrarium TV package from CyberFlix TV [3.6.0].apk
+
+
 
 
 

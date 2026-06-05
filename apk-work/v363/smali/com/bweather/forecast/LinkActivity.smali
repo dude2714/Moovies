@@ -5271,21 +5271,87 @@
 
     move-result-object v0
 
+    const-string v1, "data"
+
+    invoke-virtual {v0, v1}, Lto1;->ــ(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_rd_payload_ready
+
+    invoke-virtual {v0, v1}, Lto1;->ʽʽ(Ljava/lang/String;)Lqo1;
+
+    move-result-object p1
+
+    :cond_rd_payload_ready
+    invoke-virtual {p1}, Lqo1;->ˑ()Lto1;
+
+    move-result-object v0
+
     const/4 v10, 0x2
 
     const-string v1, "wdlonadt"
 
     const-string v1, "download"
 
+    invoke-virtual {v0, v1}, Lto1;->ــ(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_rd_check_link
+
     invoke-virtual {v0, v1}, Lto1;->ʽʽ(Ljava/lang/String;)Lqo1;
 
     move-result-object v0
 
-    const/4 v10, 0x6
+    invoke-virtual {v0}, Lqo1;->ᴵ()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_rd_link_done
+
+    :cond_rd_check_link
+    const-string v1, "link"
+
+    invoke-virtual {v0, v1}, Lto1;->ــ(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_rd_check_url
+
+    invoke-virtual {v0, v1}, Lto1;->ʽʽ(Ljava/lang/String;)Lqo1;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Lqo1;->ᴵ()Ljava/lang/String;
 
     move-result-object v0
+
+    goto :goto_rd_link_done
+
+    :cond_rd_check_url
+    const-string v1, "url"
+
+    invoke-virtual {v0, v1}, Lto1;->ــ(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_rd_link_empty
+
+    invoke-virtual {v0, v1}, Lto1;->ʽʽ(Ljava/lang/String;)Lqo1;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lqo1;->ᴵ()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_rd_link_done
+
+    :cond_rd_link_empty
+    const-string v0, ""
+
+    :goto_rd_link_done
 
     const/4 v10, 0x5
 
@@ -8484,16 +8550,6 @@
     move-result-object v0
 
     const/4 v3, 0x3
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    const/4 v3, 0x0
-
-    if-nez v1, :cond_0
-
-    const/4 v3, 0x6
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -11778,14 +11834,6 @@
     :cond_token_type_ok
 
     const/4 v3, 0x6
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    const/4 v3, 0x7
-
-    if-nez v2, :cond_0
 
     invoke-static {p1, v1, v0}, Laf;->ʼˋ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Liy2;
 
