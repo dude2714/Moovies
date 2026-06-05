@@ -1,5 +1,11 @@
 ﻿# Changelog
 
+## v3.6.18 - 2026-06-05T00:16:23Z
+- APK: Terrarium-TV-v3.6.18.apk
+- Size: 17526715 bytes
+- SHA-256: 2AEF544A4942893C35133AE180CC789C7A822DC772FF8E05D41C7D6CE5B69782
+- Notes: Debrid hotfix: fall back to ahihi URL when host.url is empty so RD and AD unlock requests still run; non-debrid links remain visible.
+
 ## v3.6.16 - 2026-06-04T01:17:25Z
 - APK: Terrarium TV.apk
 - Size: 17526715 bytes
@@ -101,6 +107,10 @@
 - Size: 16975982 bytes
 - SHA-256: 2877CB1E695D888C5AEB51AD0D41D4CEB219228185EB6237C37369A6B57D5A35
 - Notes: Initial standalone Terrarium TV package from CyberFlix TV [3.6.0].apk
+
+
+
+
 
 
 

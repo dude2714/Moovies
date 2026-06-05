@@ -10,12 +10,34 @@ Standalone APK folder for Terrarium TV.
 - CHANGELOG.md - release history
 - Start Terrarium TV.cmd - local launcher
 - UPDATE-STATUS.txt - local checkpoint notes
+- scripts/Build-TerrariumPatchedApk.ps1 - builds APK from apk-work smali
 - scripts/Publish-New-TerrariumVersion.ps1 - one-command release publisher
+
+## Build Patched APK
+
+From the repo root, run:
+
+```powershell
+.\scripts\Build-TerrariumPatchedApk.ps1
+```
+
+Optional arguments:
+
+```powershell
+.\scripts\Build-TerrariumPatchedApk.ps1 -SmaliDir "apk-work/v363" -OutputApk "build/TerrariumTV-v3.6.17-unsigned.apk"
+```
+
+If `apktool` is not in `PATH`, you can pass a local path:
+
+```powershell
+.\scripts\Build-TerrariumPatchedApk.ps1 -ApktoolPath "C:\path\to\apktool.bat"
+```
 
 ## Current Release
 
-- Version: v3.6.0
-- SHA-256: 2877CB1E695D888C5AEB51AD0D41D4CEB219228185EB6237C37369A6B57D5A35
+- Version: v3.6.18
+- File: Terrarium-TV-v3.6.18.apk
+- SHA-256: 2AEF544A4942893C35133AE180CC789C7A822DC772FF8E05D41C7D6CE5B69782
 
 ## Publish New Release
 

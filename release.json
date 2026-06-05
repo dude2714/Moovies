@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "v3.6.16",
-    "updatedUtc":  "2026-06-04T01:17:25Z",
-    "apkFile":  "Terrarium TV.apk",
+    "version":  "v3.6.18",
+    "updatedUtc":  "2026-06-05T00:16:23Z",
+    "apkFile":  "Terrarium-TV-v3.6.18.apk",
     "sizeBytes":  17526715,
-    "sha256":  "5ABBC20FEC8AA2B7C9C96D1123CA97B76B23701926B0B947A65381FD7071B303",
-    "notes":  "Rollback UI regression: stable link adapter restored to keep scraping on selected movie and preserve non-debrid links."
+    "sha256":  "2AEF544A4942893C35133AE180CC789C7A822DC772FF8E05D41C7D6CE5B69782",
+    "notes":  "Debrid hotfix: fall back to ahihi URL when host.url is empty so RD and AD unlock requests still run; non-debrid links remain visible."
 }
