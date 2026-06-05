@@ -11767,6 +11767,16 @@
 
     move-result-object v1
 
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_token_type_ok
+
+    const-string v1, "Bearer"
+
+    :cond_token_type_ok
+
     const/4 v3, 0x6
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z

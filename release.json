@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "v3.6.19",
-    "updatedUtc":  "2026-06-05T00:24:27Z",
-    "apkFile":  "Terrarium-TV-v3.6.19.apk",
+    "version":  "v3.6.20",
+    "updatedUtc":  "2026-06-05T00:32:12Z",
+    "apkFile":  "Terrarium-TV-v3.6.20.apk",
     "sizeBytes":  17526715,
-    "sha256":  "F57D874281FEED44B87A9C864D1C0468C451865B80ACD5BD8E1FFD847C5D1BAC",
-    "notes":  "Debrid attempt expansion: when source has both host.url and ahihi URLs, try RD and AD unlock against both valid distinct HTTP candidates; keeps non-debrid links unchanged."
+    "sha256":  "095C3134BCE4DFD2BAD3B64BEEAFE22AAF08202D1843A3EAFF2C3897028A116D",
+    "notes":  "RD auth fallback: default token_type to Bearer when missing, plus prior dual URL debrid attempts; keeps non-debrid links unchanged."
 }
