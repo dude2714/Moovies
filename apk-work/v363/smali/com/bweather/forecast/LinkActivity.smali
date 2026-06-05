@@ -4946,43 +4946,123 @@
 
     const-string v0, "link"
 
+    invoke-virtual {p1, v0}, Lto1;->ــ(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_link_fallback_ad
+
     invoke-virtual {p1, v0}, Lto1;->ʽʽ(Ljava/lang/String;)Lqo1;
 
     move-result-object v0
-
-    const/4 v10, 0x5
 
     invoke-virtual {v0}, Lqo1;->ᴵ()Ljava/lang/String;
 
     move-result-object v0
 
+    goto :goto_link_done_ad
+
+    :cond_link_fallback_ad
+    const-string v0, "wdlonadt"
+
+    const-string v0, "download"
+
+    invoke-virtual {p1, v0}, Lto1;->ــ(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_link_empty_ad
+
+    invoke-virtual {p1, v0}, Lto1;->ʽʽ(Ljava/lang/String;)Lqo1;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lqo1;->ᴵ()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_link_done_ad
+
+    :cond_link_empty_ad
+    const-string v0, ""
+
+    :goto_link_done_ad
     const/4 v10, 0x3
 
     const-string v1, "host"
+
+    invoke-virtual {p1, v1}, Lto1;->ــ(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_host_missing_ad
 
     invoke-virtual {p1, v1}, Lto1;->ʽʽ(Ljava/lang/String;)Lqo1;
 
     move-result-object v1
 
-    const/4 v10, 0x6
-
     invoke-virtual {v1}, Lqo1;->ᴵ()Ljava/lang/String;
 
     move-result-object v1
 
+    goto :goto_host_done_ad
+
+    :cond_host_missing_ad
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/net/Uri;->getHost()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :goto_host_done_ad
+
+    const-string v1, "AllDebrid"
+
+    :goto_host_done_ad
     const-string v2, "filename"
 
     const/4 v10, 0x5
+
+    invoke-virtual {p1, v2}, Lto1;->ــ(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_name_missing_ad
 
     invoke-virtual {p1, v2}, Lto1;->ʽʽ(Ljava/lang/String;)Lqo1;
 
     move-result-object v2
 
-    const/4 v10, 0x5
-
     invoke-virtual {v2}, Lqo1;->ᴵ()Ljava/lang/String;
 
     move-result-object v2
+
+    goto :goto_name_done_ad
+
+    :cond_name_missing_ad
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-eqz v3, :goto_name_done_ad
+
+    const-string v2, "AD Link"
+
+    :goto_name_done_ad
 
     const/4 v10, 0x5
 
@@ -5219,16 +5299,40 @@
 
     const/4 v10, 0x6
 
+    invoke-virtual {v1, v2}, Lto1;->ــ(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_host_missing_rd
+
     invoke-virtual {v1, v2}, Lto1;->ʽʽ(Ljava/lang/String;)Lqo1;
 
     move-result-object v1
-
-    const/4 v10, 0x3
 
     invoke-virtual {v1}, Lqo1;->ᴵ()Ljava/lang/String;
 
     move-result-object v1
 
+    goto :goto_host_done_rd
+
+    :cond_host_missing_rd
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/net/Uri;->getHost()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :goto_host_done_rd
+
+    const-string v1, "RealDebrid"
+
+    :goto_host_done_rd
     invoke-virtual {p1}, Lqo1;->ˑ()Lto1;
 
     move-result-object v2
@@ -5239,15 +5343,40 @@
 
     const-string v3, "filename"
 
+    invoke-virtual {v2, v3}, Lto1;->ــ(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_name_missing_rd
+
     invoke-virtual {v2, v3}, Lto1;->ʽʽ(Ljava/lang/String;)Lqo1;
 
     move-result-object v2
 
-    const/4 v10, 0x5
-
     invoke-virtual {v2}, Lqo1;->ᴵ()Ljava/lang/String;
 
     move-result-object v2
+
+    goto :goto_name_done_rd
+
+    :cond_name_missing_rd
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v8
+
+    if-eqz v8, :goto_name_done_rd
+
+    const-string v2, "RD Link"
+
+    :goto_name_done_rd
 
     const/4 v10, 0x6
 
@@ -7198,6 +7327,30 @@
 
     :goto_0
     const/4 v10, 0x0
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_url_ready
+
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_url_ready
+
+    const-string v1, "http"
+
+    invoke-virtual {v4, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_url_ready
+
+    move-object v0, v4
+
+    :cond_url_ready
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
