@@ -4745,6 +4745,182 @@
     return-void
 .end method
 
+.method private ʽᵢᵔ(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "None"
+
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    const-string v1, "com.mxtech.videoplayer.ad"
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    const-string v1, "com.mxtech.videoplayer.pro"
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, "com.player.bear"
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Lcom/bweather/forecast/fragment/SettingsFragment;->ʽᐧ:Lrd;
+
+    const-string v2, "title_player3"
+
+    const-string p1, "Fluid Video Player"
+
+    invoke-virtual {v1, v2, p1}, Lrd;->ⁱ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :cond_3
+
+    :cond_1
+    const-string v1, "org.videolan.vlc"
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    const-string v0, "VLC"
+
+    goto :cond_3
+
+    :cond_2
+    :goto_0
+    const-string v0, "MX Player"
+
+    :cond_3
+    return-object v0
+.end method
+
+.method private ʽᵢᵢ()V
+    .locals 7
+
+    new-instance v0, Landroidx/appcompat/app/ʾ$ʻ;
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v1
+
+    const v2, 0x7f1200f3
+
+    invoke-direct {v0, v1, v2}, Landroidx/appcompat/app/ʾ$ʻ;-><init>(Landroid/content/Context;I)V
+
+    const-string v1, "Choose default player"
+
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/ʾ$ʻ;->ˈˈ(Ljava/lang/CharSequence;)Landroidx/appcompat/app/ʾ$ʻ;
+
+    const-string v1, "None"
+
+    const-string v2, "MX Player"
+
+    const-string v3, "Fluid Video Player"
+
+    const-string v4, "VLC"
+
+    filled-new-array {v1, v2, v3, v4}, [Ljava/lang/String;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/bweather/forecast/fragment/SettingsFragment;->ʽᐧ:Lrd;
+
+    const-string v3, "package_name_player3"
+
+    const-string v4, ""
+
+    invoke-virtual {v2, v3, v4}, Lrd;->ⁱ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    const-string v4, "com.mxtech.videoplayer.ad"
+
+    invoke-virtual {v4, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
+    const-string v4, "com.mxtech.videoplayer.pro"
+
+    invoke-virtual {v4, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v4, "com.player.bear"
+
+    invoke-virtual {v4, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    const/4 v3, 0x2
+
+    goto :goto_1
+
+    :cond_1
+    const-string v4, "org.videolan.vlc"
+
+    invoke-virtual {v4, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :goto_1
+
+    const/4 v3, 0x3
+
+    goto :goto_1
+
+    :cond_2
+    :goto_0
+    const/4 v3, 0x1
+
+    :goto_1
+    new-instance v2, Lcom/bweather/forecast/fragment/SettingsFragment$ᵔᵢ;
+
+    invoke-direct {v2, p0}, Lcom/bweather/forecast/fragment/SettingsFragment$ᵔᵢ;-><init>(Lcom/bweather/forecast/fragment/SettingsFragment;)V
+
+    invoke-virtual {v0, v1, v3, v2}, Landroidx/appcompat/app/ʾ$ʻ;->ˆˆ([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/ʾ$ʻ;
+
+    invoke-virtual {v0}, Landroidx/appcompat/app/ʾ$ʻ;->ʻ()Landroidx/appcompat/app/ʾ;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+
+    return-void
+.end method
+
 .method static synthetic ʾʾ(Lcom/bweather/forecast/fragment/SettingsFragment;)Landroid/widget/CheckBox;
     .locals 1
 
@@ -4971,6 +5147,16 @@
     .locals 1
 
     invoke-direct {p0}, Lcom/bweather/forecast/fragment/SettingsFragment;->ʽˆ()V
+
+    return-void
+.end method
+
+.method static synthetic ᵔᵢ(Lcom/bweather/forecast/fragment/SettingsFragment;)V
+    .locals 1
+
+    invoke-direct {p0}, Lcom/bweather/forecast/fragment/SettingsFragment;->ʽᵢᵢ()V
+
+    const/4 v0, 0x0
 
     return-void
 .end method
@@ -8727,57 +8913,18 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v0
+    iget-object v0, p0, Lcom/bweather/forecast/fragment/SettingsFragment;->ʻᴵ:Landroid/view/View;
 
-    const/4 v8, 0x6
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    if-nez v0, :cond_5
+    iget-object v0, p0, Lcom/bweather/forecast/fragment/SettingsFragment;->ʻᵎ:Landroid/widget/TextView;
 
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-direct {p0, p1}, Lcom/bweather/forecast/fragment/SettingsFragment;->ʽᵢᵔ(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result v0
+    move-result-object v4
 
-    const/4 v8, 0x1
-
-    if-nez v0, :cond_5
-
-    const/4 v8, 0x2
-
-    invoke-virtual {p0}, Lcom/bweather/forecast/base/ʻ;->ˏ()Landroid/content/Context;
-
-    move-result-object v0
-
-    const/4 v8, 0x7
-
-    invoke-static {p1, v0}, Ltd;->ⁱⁱ(Ljava/lang/String;Landroid/content/Context;)Z
-
-    move-result v0
-
-    const/4 v8, 0x6
-
-    if-nez v0, :cond_5
-
-    const/4 v8, 0x6
-
-    invoke-virtual {p0}, Lcom/bweather/forecast/base/ʻ;->ˏ()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {p1, v0}, Ltd;->ⁱⁱ(Ljava/lang/String;Landroid/content/Context;)Z
-
-    move-result p1
-
-    const/4 v8, 0x0
-
-    if-nez p1, :cond_5
-
-    iget-object p1, p0, Lcom/bweather/forecast/fragment/SettingsFragment;->ʻᴵ:Landroid/view/View;
-
-    const/4 v8, 0x2
-
-    invoke-virtual {p1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     :cond_5
     const/4 v8, 0x4

@@ -3,6 +3,6 @@
     "updatedUtc":  "2026-06-07T00:00:00Z",
     "apkFile":  "Moovies-v3.6.23.apk",
     "sizeBytes":  17530811,
-    "sha256":  "4A843F826A58C6847A208AA6E860038B8AFD1F733FF0E93E48796DDB14BCDB57",
-    "notes":  "Patched: default player chooser (MX/Fluid/VLC) visible in settings; TV Shows Animation category added."
+    "sha256":  "E620A14814BD0E8AD4D250A825F54420DDE06BCC8520736602DBAA2F5513FD68",
+    "notes":  "Patched: default player chooser (MX/Fluid/VLC) visible in settings; TV Shows Animation category added in both main and settings category lists."
 }
