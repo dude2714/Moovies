@@ -1,0 +1,49 @@
+.class public final synthetic Lcom/bweather/forecast/task/ʽ;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lj03;
+
+
+# static fields
+.field public static final synthetic ʽʽ:Lcom/bweather/forecast/task/ʽ;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/bweather/forecast/task/ʽ;
+
+    invoke-direct {v0}, Lcom/bweather/forecast/task/ʽ;-><init>()V
+
+    sput-object v0, Lcom/bweather/forecast/task/ʽ;->ʽʽ:Lcom/bweather/forecast/task/ʽ;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    check-cast p1, Lqo1;
+
+    const/4 v0, 0x4
+
+    invoke-static {p1}, Lcom/bweather/forecast/task/AddHistoryWorker;->ʿ(Lqo1;)V
+
+    const/4 v0, 0x1
+
+    return-void
+.end method

@@ -1,0 +1,7 @@
+.class public interface abstract Lcom/ironsource/adqualitysdk/sdk/i/q;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract onEvent(Ljava/lang/String;)V
+.end method

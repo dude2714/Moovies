@@ -1,0 +1,25 @@
+.class public interface abstract Lcom/google/android/material/slider/ˆ$ʻ;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/google/android/material/slider/ʻ;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/material/slider/ˆ;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "\u02bb"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/android/material/slider/\u02bb<",
+        "Lcom/google/android/material/slider/\u02c6;",
+        ">;"
+    }
+.end annotation

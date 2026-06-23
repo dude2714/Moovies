@@ -1,0 +1,69 @@
+.class final Landroidx/lifecycle/WithLifecycleStateKt$ʻ;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/lifecycle/WithLifecycleStateKt;->ʻ(Landroidx/lifecycle/ᵢ;Landroidx/lifecycle/ᵢ$ʼ;ZLis4;Lag4;Lwa4;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation runtime Ln34;
+    d1 = {
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u0002H\n\u00a2\u0006\u0002\u0008\u0003"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "R",
+        "run"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic ʼʼ:Landroidx/lifecycle/WithLifecycleStateKt$suspendWithStateAtLeastUnchecked$2$observer$1;
+
+.field final synthetic ʽʽ:Landroidx/lifecycle/ᵢ;
+
+
+# direct methods
+.method constructor <init>(Landroidx/lifecycle/ᵢ;Landroidx/lifecycle/WithLifecycleStateKt$suspendWithStateAtLeastUnchecked$2$observer$1;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/lifecycle/WithLifecycleStateKt$ʻ;->ʽʽ:Landroidx/lifecycle/ᵢ;
+
+    iput-object p2, p0, Landroidx/lifecycle/WithLifecycleStateKt$ʻ;->ʼʼ:Landroidx/lifecycle/WithLifecycleStateKt$suspendWithStateAtLeastUnchecked$2$observer$1;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    iget-object v0, p0, Landroidx/lifecycle/WithLifecycleStateKt$ʻ;->ʽʽ:Landroidx/lifecycle/ᵢ;
+
+    iget-object v1, p0, Landroidx/lifecycle/WithLifecycleStateKt$ʻ;->ʼʼ:Landroidx/lifecycle/WithLifecycleStateKt$suspendWithStateAtLeastUnchecked$2$observer$1;
+
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/ᵢ;->ʻ(Landroidx/lifecycle/ᴵᴵ;)V
+
+    return-void
+.end method

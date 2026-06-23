@@ -1,0 +1,7 @@
+.class public interface abstract Lcom/ironsource/adqualitysdk/sdk/i/ip;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract ﻐ(Ljava/lang/String;)V
+.end method

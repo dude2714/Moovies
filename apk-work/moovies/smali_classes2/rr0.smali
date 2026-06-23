@@ -1,0 +1,296 @@
+.class public final Lrr0;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lvr0;
+
+
+# annotations
+.annotation build Landroidx/annotation/ˑˑ;
+    value = 0x15
+.end annotation
+
+
+# instance fields
+.field private ʻ:F
+
+.field private ʼ:F
+
+.field private ʽ:F
+
+.field private ʾ:F
+
+.field private ʿ:Z
+
+.field private ˆ:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lrr0;-><init>(Z)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Z)V
+    .locals 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    iput v0, p0, Lrr0;->ʻ:F
+
+    const v1, 0x3f8ccccd    # 1.1f
+
+    iput v1, p0, Lrr0;->ʼ:F
+
+    const v1, 0x3f4ccccd    # 0.8f
+
+    iput v1, p0, Lrr0;->ʽ:F
+
+    iput v0, p0, Lrr0;->ʾ:F
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lrr0;->ˆ:Z
+
+    iput-boolean p1, p0, Lrr0;->ʿ:Z
+
+    return-void
+.end method
+
+.method private static ʽ(Landroid/view/View;FF)Landroid/animation/Animator;
+    .locals 6
+
+    const/4 v0, 0x2
+
+    new-array v1, v0, [Landroid/animation/PropertyValuesHolder;
+
+    sget-object v2, Landroid/view/View;->SCALE_X:Landroid/util/Property;
+
+    new-array v3, v0, [F
+
+    const/4 v4, 0x0
+
+    aput p1, v3, v4
+
+    const/4 v5, 0x1
+
+    aput p2, v3, v5
+
+    invoke-static {v2, v3}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+
+    move-result-object v2
+
+    aput-object v2, v1, v4
+
+    sget-object v2, Landroid/view/View;->SCALE_Y:Landroid/util/Property;
+
+    new-array v0, v0, [F
+
+    aput p1, v0, v4
+
+    aput p2, v0, v5
+
+    invoke-static {v2, v0}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+
+    move-result-object p1
+
+    aput-object p1, v1, v5
+
+    invoke-static {p0, v1}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public ʻ(Landroid/view/ViewGroup;Landroid/view/View;)Landroid/animation/Animator;
+    .locals 1
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/ˈˈ;
+    .end annotation
+
+    iget-boolean p1, p0, Lrr0;->ˆ:Z
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :cond_0
+    iget-boolean p1, p0, Lrr0;->ʿ:Z
+
+    if-eqz p1, :cond_1
+
+    iget p1, p0, Lrr0;->ʻ:F
+
+    iget v0, p0, Lrr0;->ʼ:F
+
+    invoke-static {p2, p1, v0}, Lrr0;->ʽ(Landroid/view/View;FF)Landroid/animation/Animator;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_1
+    iget p1, p0, Lrr0;->ʾ:F
+
+    iget v0, p0, Lrr0;->ʽ:F
+
+    invoke-static {p2, p1, v0}, Lrr0;->ʽ(Landroid/view/View;FF)Landroid/animation/Animator;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public ʼ(Landroid/view/ViewGroup;Landroid/view/View;)Landroid/animation/Animator;
+    .locals 1
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/ˈˈ;
+    .end annotation
+
+    iget-boolean p1, p0, Lrr0;->ʿ:Z
+
+    if-eqz p1, :cond_0
+
+    iget p1, p0, Lrr0;->ʽ:F
+
+    iget v0, p0, Lrr0;->ʾ:F
+
+    invoke-static {p2, p1, v0}, Lrr0;->ʽ(Landroid/view/View;FF)Landroid/animation/Animator;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_0
+    iget p1, p0, Lrr0;->ʼ:F
+
+    iget v0, p0, Lrr0;->ʻ:F
+
+    invoke-static {p2, p1, v0}, Lrr0;->ʽ(Landroid/view/View;FF)Landroid/animation/Animator;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public ʾ()F
+    .locals 1
+
+    iget v0, p0, Lrr0;->ʾ:F
+
+    return v0
+.end method
+
+.method public ʿ()F
+    .locals 1
+
+    iget v0, p0, Lrr0;->ʽ:F
+
+    return v0
+.end method
+
+.method public ˆ()F
+    .locals 1
+
+    iget v0, p0, Lrr0;->ʼ:F
+
+    return v0
+.end method
+
+.method public ˈ()F
+    .locals 1
+
+    iget v0, p0, Lrr0;->ʻ:F
+
+    return v0
+.end method
+
+.method public ˉ()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lrr0;->ʿ:Z
+
+    return v0
+.end method
+
+.method public ˊ()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lrr0;->ˆ:Z
+
+    return v0
+.end method
+
+.method public ˋ(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lrr0;->ʿ:Z
+
+    return-void
+.end method
+
+.method public ˎ(F)V
+    .locals 0
+
+    iput p1, p0, Lrr0;->ʾ:F
+
+    return-void
+.end method
+
+.method public ˏ(F)V
+    .locals 0
+
+    iput p1, p0, Lrr0;->ʽ:F
+
+    return-void
+.end method
+
+.method public ˑ(F)V
+    .locals 0
+
+    iput p1, p0, Lrr0;->ʼ:F
+
+    return-void
+.end method
+
+.method public י(F)V
+    .locals 0
+
+    iput p1, p0, Lrr0;->ʻ:F
+
+    return-void
+.end method
+
+.method public ـ(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lrr0;->ˆ:Z
+
+    return-void
+.end method

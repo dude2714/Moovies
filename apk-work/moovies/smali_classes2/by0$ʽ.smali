@@ -1,0 +1,146 @@
+.class Lby0$ʽ;
+.super Liy0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lby0;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = "\u02bd"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Liy0<",
+        "Ljava/util/Map$Entry<",
+        "TK;TV;>;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic ʽʽ:Lby0;
+
+
+# direct methods
+.method constructor <init>(Lby0;)V
+    .locals 0
+
+    iput-object p1, p0, Lby0$ʽ;->ʽʽ:Lby0;
+
+    invoke-direct {p0}, Liy0;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public remove(Ljava/lang/Object;)Z
+    .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+
+    instance-of v0, p1, Ljava/util/Map$Entry;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Ljava/util/Map$Entry;
+
+    iget-object v0, p0, Lby0$ʽ;->ʽʽ:Lby0;
+
+    iget-object v0, v0, Lby0;->ˆˆ:Li11;
+
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Li11;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lby0$ʽ;->ʽʽ:Lby0;
+
+    iget-object v0, v0, Lby0;->ˉˉ:Lhu0;
+
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lhu0;->apply(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lby0$ʽ;->ʽʽ:Lby0;
+
+    iget-object v0, v0, Lby0;->ˆˆ:Li11;
+
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-interface {v0, v1, p1}, Li11;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method protected bridge synthetic ʻـ()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lby0$ʽ;->ʻᐧ()Ljava/util/Collection;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected ʻᐧ()Ljava/util/Collection;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Collection<",
+            "Ljava/util/Map$Entry<",
+            "TK;TV;>;>;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lby0$ʽ;->ʽʽ:Lby0;
+
+    iget-object v0, v0, Lby0;->ˆˆ:Li11;
+
+    invoke-interface {v0}, Li11;->ʾ()Ljava/util/Collection;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lby0$ʽ;->ʽʽ:Lby0;
+
+    invoke-virtual {v1}, Lby0;->ٴٴ()Lhu0;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lww0;->ʿ(Ljava/util/Collection;Lhu0;)Ljava/util/Collection;
+
+    move-result-object v0
+
+    return-object v0
+.end method

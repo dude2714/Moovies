@@ -1,0 +1,64 @@
+.class public Ltl5;
+.super Lul5;
+
+
+# instance fields
+.field private final ʻ:[Lul5;
+
+
+# direct methods
+.method public varargs constructor <init>([Lul5;)V
+    .locals 0
+
+    invoke-direct {p0}, Lul5;-><init>()V
+
+    invoke-static {p1}, Lsi5;->ˆˆ([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, [Lul5;
+
+    iput-object p1, p0, Ltl5;->ʻ:[Lul5;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public ʼ(Ljava/lang/CharSequence;ILjava/io/Writer;)I
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    iget-object v0, p0, Ltl5;->ʻ:[Lul5;
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v1, :cond_1
+
+    aget-object v4, v0, v3
+
+    invoke-virtual {v4, p1, p2, p3}, Lul5;->ʼ(Ljava/lang/CharSequence;ILjava/io/Writer;)I
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    return v4
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return v2
+.end method

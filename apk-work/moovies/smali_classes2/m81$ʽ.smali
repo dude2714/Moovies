@@ -1,0 +1,49 @@
+.class Lm81$ʽ;
+.super Ljava/io/ByteArrayOutputStream;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lm81;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "\u02bd"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/io/ByteArrayOutputStream;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lm81$ʻ;)V
+    .locals 0
+
+    invoke-direct {p0}, Lm81$ʽ;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method getCount()I
+    .locals 1
+
+    iget v0, p0, Ljava/io/ByteArrayOutputStream;->count:I
+
+    return v0
+.end method
+
+.method ʾ()[B
+    .locals 1
+
+    iget-object v0, p0, Ljava/io/ByteArrayOutputStream;->buf:[B
+
+    return-object v0
+.end method

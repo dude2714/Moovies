@@ -1,0 +1,23 @@
+.class final Lom3$ʽ;
+.super Lvm3;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lom3;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "\u02bd"
+.end annotation
+
+
+# direct methods
+.method constructor <init>(Ljava/util/concurrent/ThreadFactory;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lvm3;-><init>(Ljava/util/concurrent/ThreadFactory;)V
+
+    return-void
+.end method

@@ -1,0 +1,36 @@
+.class final Lcom/google/android/gms/internal/cast/ʻʻ;
+.super Lcom/google/android/gms/internal/cast/ﾞ;
+
+
+# instance fields
+.field private final ʿʿ:Lcom/google/android/gms/internal/cast/zzer;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/internal/cast/zzer;I)V
+    .locals 1
+
+    invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v0
+
+    invoke-direct {p0, v0, p2}, Lcom/google/android/gms/internal/cast/ﾞ;-><init>(II)V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/cast/ʻʻ;->ʿʿ:Lcom/google/android/gms/internal/cast/zzer;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected final ʻ(I)Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/cast/ʻʻ;->ʿʿ:Lcom/google/android/gms/internal/cast/zzer;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method

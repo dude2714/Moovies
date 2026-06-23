@@ -1,0 +1,142 @@
+.class public final Lf75;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation runtime Ln34;
+    d1 = {
+        "\u0000,\n\u0000\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0012\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\n\u0010\u0000\u001a\u00020\u0001*\u00020\u0002\u001a\n\u0010\u0003\u001a\u00020\u0004*\u00020\u0002\u001a\n\u0010\u0005\u001a\u00020\u0004*\u00020\u0002\u001a$\u0010\u0006\u001a\u00020\u0002*\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\u000b\u001a\u0014\u0010\u0006\u001a\u00020\u0002*\u00020\r2\u0008\u0010\u0008\u001a\u0004\u0018\u00010\t\u00a8\u0006\u000e"
+    }
+    d2 = {
+        "commonContentLength",
+        "",
+        "Lokhttp3/RequestBody;",
+        "commonIsDuplex",
+        "",
+        "commonIsOneShot",
+        "commonToRequestBody",
+        "",
+        "contentType",
+        "Lokhttp3/MediaType;",
+        "offset",
+        "",
+        "byteCount",
+        "Lokio/ByteString;",
+        "okhttp"
+    }
+    k = 0x2
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public static final ʻ(Lh65;)J
+    .locals 2
+    .param p0    # Lh65;
+        .annotation build Lro5;
+        .end annotation
+    .end param
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lji4;->ٴ(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-wide/16 v0, -0x1
+
+    return-wide v0
+.end method
+
+.method public static final ʼ(Lh65;)Z
+    .locals 1
+    .param p0    # Lh65;
+        .annotation build Lro5;
+        .end annotation
+    .end param
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lji4;->ٴ(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public static final ʽ(Lh65;)Z
+    .locals 1
+    .param p0    # Lh65;
+        .annotation build Lro5;
+        .end annotation
+    .end param
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lji4;->ٴ(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public static final ʾ(Lyb5;La65;)Lh65;
+    .locals 1
+    .param p0    # Lyb5;
+        .annotation build Lro5;
+        .end annotation
+    .end param
+    .param p1    # La65;
+        .annotation build Lso5;
+        .end annotation
+    .end param
+    .annotation build Lro5;
+    .end annotation
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lji4;->ٴ(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lf75$ʼ;
+
+    invoke-direct {v0, p1, p0}, Lf75$ʼ;-><init>(La65;Lyb5;)V
+
+    return-object v0
+.end method
+
+.method public static final ʿ([BLa65;II)Lh65;
+    .locals 7
+    .param p0    # [B
+        .annotation build Lro5;
+        .end annotation
+    .end param
+    .param p1    # La65;
+        .annotation build Lso5;
+        .end annotation
+    .end param
+    .annotation build Lro5;
+    .end annotation
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lji4;->ٴ(Ljava/lang/Object;Ljava/lang/String;)V
+
+    array-length v0, p0
+
+    int-to-long v1, v0
+
+    int-to-long v3, p2
+
+    int-to-long v5, p3
+
+    invoke-static/range {v1 .. v6}, Lj75;->ʿ(JJJ)V
+
+    new-instance v0, Lf75$ʻ;
+
+    invoke-direct {v0, p1, p3, p0, p2}, Lf75$ʻ;-><init>(La65;I[BI)V
+
+    return-object v0
+.end method

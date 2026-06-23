@@ -1,0 +1,88 @@
+.class public abstract Lfv0$ʻ;
+.super Lfv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lfv0;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "\u02bb"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lfv0<",
+        "TK;TV;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final ʽʽ:Lav0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lav0<",
+            "TK;TV;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method protected constructor <init>(Lav0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lav0<",
+            "TK;TV;>;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Lfv0;-><init>()V
+
+    invoke-static {p1}, Lgu0;->ʼʼ(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lav0;
+
+    iput-object p1, p0, Lfv0$ʻ;->ʽʽ:Lav0;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected bridge synthetic ʻـ()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lfv0$ʻ;->ʻᐧ()Lav0;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected final ʻᐧ()Lav0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lav0<",
+            "TK;TV;>;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lfv0$ʻ;->ʽʽ:Lav0;
+
+    return-object v0
+.end method

@@ -1,0 +1,83 @@
+# Build artifacts (safe to regenerate)
+build/
+dist/
+*.dex
+*.apk
+*.idsig
+
+# Compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Temporary files
+*.tmp
+*.backup
+*.bak
+*~
+*.swp
+*.swo
+*.orig
+
+# IDE/Editor files
+.vscode/
+.idea/
+.DS_Store
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# System files
+Thumbs.db
+.directory
+
+# Logs
+*.log
+build.log
+
+# Prevent sync back to main repository
+# DO NOT commit changes that belong to apk-work/ directory
+# Fork lives ONLY in Fluid-Player-Fork/
+
+# Prevent accidental links/references
+.sync-lock
+.reference-lock
+__original__/
+__source__/
+
+# Cache
+.gradle/
+.cache/
+
+# Dependencies (if using dependency management)
+libs/
+vendor/
+
+# Backups outside of fork (optional)
+*-BACKUP/
+*-backup/
+*.tar.gz
+*.zip
+
+# Build outputs - not needed in repo
+build/
+out/
+target/
+dist/
+
+# Generated files
+*.gen
+*.generated
+
+# Do NOT include original APK files
+Moovies-*.apk
+Terrarium-TV-*.apk
+
+# Process lock files
+.lock
+*.lock
+
+# Prevent merging with parent Moovies repository
+/..
+/.git

@@ -1,0 +1,115 @@
+.class final Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$208;
+.super Lli4;
+
+# interfaces
+.implements Lag4;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/unity3d/services/core/di/ServiceProvider$initialize$1;->invoke(Lcom/unity3d/services/core/di/ServicesRegistry;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lli4;",
+        "Lag4<",
+        "Lcom/unity3d/services/ads/offerwall/OfferwallAdapterBridge;",
+        ">;"
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nServiceProvider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ServiceProvider.kt\ncom/unity3d/services/core/di/ServiceProvider$initialize$1$208\n+ 2 ServicesRegistry.kt\ncom/unity3d/services/core/di/ServicesRegistry\n*L\n1#1,1181:1\n58#2,2:1182\n*S KotlinDebug\n*F\n+ 1 ServiceProvider.kt\ncom/unity3d/services/core/di/ServiceProvider$initialize$1$208\n*L\n1157#1:1182,2\n*E\n"
+.end annotation
+
+.annotation runtime Ln34;
+    d1 = {
+        "\u0000\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0002"
+    }
+    d2 = {
+        "<anonymous>",
+        "Lcom/unity3d/services/ads/offerwall/OfferwallAdapterBridge;",
+        "invoke"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lpj4;
+    value = {
+        "SMAP\nServiceProvider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ServiceProvider.kt\ncom/unity3d/services/core/di/ServiceProvider$initialize$1$208\n+ 2 ServicesRegistry.kt\ncom/unity3d/services/core/di/ServicesRegistry\n*L\n1#1,1181:1\n58#2,2:1182\n*S KotlinDebug\n*F\n+ 1 ServiceProvider.kt\ncom/unity3d/services/core/di/ServiceProvider$initialize$1$208\n*L\n1157#1:1182,2\n*E\n"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+
+# direct methods
+.method constructor <init>(Lcom/unity3d/services/core/di/ServicesRegistry;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$208;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lli4;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Lcom/unity3d/services/ads/offerwall/OfferwallAdapterBridge;
+    .locals 5
+    .annotation build Lro5;
+    .end annotation
+
+    new-instance v0, Lcom/unity3d/services/ads/offerwall/OfferwallAdapterBridge;
+
+    iget-object v1, p0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$208;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v2, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v3, Los4;
+
+    invoke-static {v3}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v3
+
+    const-string v4, "offerwall_scope"
+
+    invoke-direct {v2, v4, v3}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v2}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Los4;
+
+    invoke-direct {v0, v1}, Lcom/unity3d/services/ads/offerwall/OfferwallAdapterBridge;-><init>(Los4;)V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$208;->invoke()Lcom/unity3d/services/ads/offerwall/OfferwallAdapterBridge;
+
+    move-result-object v0
+
+    return-object v0
+.end method

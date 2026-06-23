@@ -1,0 +1,32 @@
+.class public interface abstract annotation Lʼᴵ$ʽ;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation build Landroid/annotation/SuppressLint;
+    value = {
+        "UniqueConstants"
+    }
+.end annotation
+
+.annotation build Landroidx/annotation/ᵢᵢ;
+    value = {
+        .enum Landroidx/annotation/ᵢᵢ$ʻ;->ʽʽ:Landroidx/annotation/ᵢᵢ$ʻ;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lʼᴵ;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2609
+    name = "\u02bd"
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->SOURCE:Ljava/lang/annotation/RetentionPolicy;
+.end annotation

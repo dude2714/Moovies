@@ -1,0 +1,223 @@
+.class public final Lkd3;
+.super Lzx2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lkd3$ʻ;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        "R:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lzx2<",
+        "TR;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final ʼʼ:Lr03;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lr03<",
+            "-[",
+            "Ljava/lang/Object;",
+            "+TR;>;"
+        }
+    .end annotation
+.end field
+
+.field final ʽʽ:Ljava/lang/Iterable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Iterable<",
+            "+",
+            "Lfy2<",
+            "+TT;>;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Iterable;Lr03;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Iterable<",
+            "+",
+            "Lfy2<",
+            "+TT;>;>;",
+            "Lr03<",
+            "-[",
+            "Ljava/lang/Object;",
+            "+TR;>;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Lzx2;-><init>()V
+
+    iput-object p1, p0, Lkd3;->ʽʽ:Ljava/lang/Iterable;
+
+    iput-object p2, p0, Lkd3;->ʼʼ:Lr03;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected ʽﾞ(Lcy2;)V
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcy2<",
+            "-TR;>;)V"
+        }
+    .end annotation
+
+    const/16 v0, 0x8
+
+    new-array v0, v0, [Lfy2;
+
+    :try_start_0
+    iget-object v1, p0, Lkd3;->ʽʽ:Ljava/lang/Iterable;
+
+    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lfy2;
+
+    if-nez v4, :cond_0
+
+    new-instance v0, Ljava/lang/NullPointerException;
+
+    const-string v1, "One of the sources is null"
+
+    invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v0, p1}, Lz03;->ˋ(Ljava/lang/Throwable;Lcy2;)V
+
+    return-void
+
+    :cond_0
+    array-length v5, v0
+
+    if-ne v3, v5, :cond_1
+
+    shr-int/lit8 v5, v3, 0x2
+
+    add-int/2addr v5, v3
+
+    invoke-static {v0, v5}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Lfy2;
+
+    :cond_1
+    add-int/lit8 v5, v3, 0x1
+
+    aput-object v4, v0, v3
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    move v3, v5
+
+    goto :goto_0
+
+    :cond_2
+    if-nez v3, :cond_3
+
+    invoke-static {p1}, Lz03;->ʼ(Lcy2;)V
+
+    return-void
+
+    :cond_3
+    const/4 v1, 0x1
+
+    if-ne v3, v1, :cond_4
+
+    aget-object v0, v0, v2
+
+    new-instance v1, Llc3$ʻ;
+
+    new-instance v2, Lkd3$ʻ;
+
+    invoke-direct {v2, p0}, Lkd3$ʻ;-><init>(Lkd3;)V
+
+    invoke-direct {v1, p1, v2}, Llc3$ʻ;-><init>(Lcy2;Lr03;)V
+
+    invoke-interface {v0, v1}, Lfy2;->ʻ(Lcy2;)V
+
+    return-void
+
+    :cond_4
+    new-instance v1, Ljd3$ʼ;
+
+    iget-object v4, p0, Lkd3;->ʼʼ:Lr03;
+
+    invoke-direct {v1, p1, v3, v4}, Ljd3$ʼ;-><init>(Lcy2;ILr03;)V
+
+    invoke-interface {p1, v1}, Lcy2;->ʿ(Loz2;)V
+
+    :goto_1
+    if-ge v2, v3, :cond_6
+
+    invoke-virtual {v1}, Ljd3$ʼ;->ʽ()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_5
+
+    return-void
+
+    :cond_5
+    aget-object p1, v0, v2
+
+    iget-object v4, v1, Ljd3$ʼ;->ʾʾ:[Ljd3$ʽ;
+
+    aget-object v4, v4, v2
+
+    invoke-interface {p1, v4}, Lfy2;->ʻ(Lcy2;)V
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_1
+
+    :cond_6
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    invoke-static {v0}, Lwz2;->ʼ(Ljava/lang/Throwable;)V
+
+    invoke-static {v0, p1}, Lz03;->ˋ(Ljava/lang/Throwable;Lcy2;)V
+
+    return-void
+.end method

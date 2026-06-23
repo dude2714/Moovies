@@ -1,0 +1,154 @@
+.class public final Lak0;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lyt3;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lyt3<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final ʻ:Ljava/lang/Object;
+
+.field static final synthetic ʼ:Z
+
+
+# instance fields
+.field private volatile ʽ:Lyt3;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lyt3<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field private volatile ʾ:Ljava/lang/Object;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lak0;->ʻ:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method private constructor <init>(Lyt3;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lyt3<",
+            "TT;>;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    sget-object v0, Lak0;->ʻ:Ljava/lang/Object;
+
+    iput-object v0, p0, Lak0;->ʾ:Ljava/lang/Object;
+
+    iput-object p1, p0, Lak0;->ʽ:Lyt3;
+
+    return-void
+.end method
+
+.method public static ʻ(Lyt3;)Lyt3;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<P::",
+            "Lyt3<",
+            "TT;>;T:",
+            "Ljava/lang/Object;",
+            ">(TP;)",
+            "Lyt3<",
+            "TT;>;"
+        }
+    .end annotation
+
+    instance-of v0, p0, Lak0;
+
+    if-nez v0, :cond_1
+
+    instance-of v0, p0, Lmj0;
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Lak0;
+
+    invoke-static {p0}, Lwj0;->ʼ(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lyt3;
+
+    invoke-direct {v0, p0}, Lak0;-><init>(Lyt3;)V
+
+    return-object v0
+
+    :cond_1
+    :goto_0
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public get()Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lak0;->ʾ:Ljava/lang/Object;
+
+    sget-object v1, Lak0;->ʻ:Ljava/lang/Object;
+
+    if-ne v0, v1, :cond_1
+
+    iget-object v0, p0, Lak0;->ʽ:Lyt3;
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lak0;->ʾ:Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v0}, Lyt3;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lak0;->ʾ:Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    iput-object v1, p0, Lak0;->ʽ:Lyt3;
+
+    :cond_1
+    :goto_0
+    return-object v0
+.end method

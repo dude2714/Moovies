@@ -1,0 +1,84 @@
+.class Landroidx/core/content/ᐧᐧ$ʾ;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation build Landroidx/annotation/ˑˑ;
+    value = 0x17
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/content/ᐧᐧ;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "\u02be"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method static ʻ(Landroid/content/Context;I)I
+    .locals 0
+    .annotation build Landroidx/annotation/ᴵ;
+    .end annotation
+
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getColor(I)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method static ʼ(Landroid/content/Context;Ljava/lang/Class;)Ljava/lang/Object;
+    .locals 0
+    .annotation build Landroidx/annotation/ᴵ;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Landroid/content/Context;",
+            "Ljava/lang/Class<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static ʽ(Landroid/content/Context;Ljava/lang/Class;)Ljava/lang/String;
+    .locals 0
+    .annotation build Landroidx/annotation/ᴵ;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Ljava/lang/Class<",
+            "*>;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getSystemServiceName(Ljava/lang/Class;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

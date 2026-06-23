@@ -1,0 +1,124 @@
+.class public final Landroidx/webkit/ᵎ;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/webkit/ᵎ$ʿ;,
+        Landroidx/webkit/ᵎ$ʾ;,
+        Landroidx/webkit/ᵎ$ʼ;,
+        Landroidx/webkit/ᵎ$ʽ;,
+        Landroidx/webkit/ᵎ$ˆ;,
+        Landroidx/webkit/ᵎ$ʻ;
+    }
+.end annotation
+
+
+# static fields
+.field private static final ʻ:Ljava/lang/String; = "WebViewAssetLoader"
+
+.field public static final ʼ:Ljava/lang/String; = "appassets.androidplatform.net"
+
+
+# instance fields
+.field private final ʽ:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Landroidx/webkit/\u1d4e$\u02bf;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(Ljava/util/List;)V
+    .locals 0
+    .param p1    # Ljava/util/List;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroidx/webkit/\u1d4e$\u02bf;",
+            ">;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/webkit/ᵎ;->ʽ:Ljava/util/List;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public ʻ(Landroid/net/Uri;)Landroid/webkit/WebResourceResponse;
+    .locals 4
+    .param p1    # Landroid/net/Uri;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/ʻˆ;
+    .end annotation
+
+    .annotation build Landroidx/annotation/ˈˈ;
+    .end annotation
+
+    iget-object v0, p0, Landroidx/webkit/ᵎ;->ʽ:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/webkit/ᵎ$ʿ;
+
+    invoke-virtual {v1, p1}, Landroidx/webkit/ᵎ$ʿ;->ʼ(Landroid/net/Uri;)Landroidx/webkit/ᵎ$ʾ;
+
+    move-result-object v2
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/net/Uri;->getPath()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Landroidx/webkit/ᵎ$ʿ;->ʻ(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v2, v1}, Landroidx/webkit/ᵎ$ʾ;->ʻ(Ljava/lang/String;)Landroid/webkit/WebResourceResponse;
+
+    move-result-object v1
+
+    if-nez v1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    return-object v1
+
+    :cond_2
+    const/4 p1, 0x0
+
+    return-object p1
+.end method

@@ -1,0 +1,97 @@
+.class public abstract Lfj1$ʽ;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation build Lcom/google/auto/value/AutoValue$Builder;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lfj1;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "\u02bd"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract ʻ()Lfj1;
+    .annotation build Landroidx/annotation/ˉˉ;
+    .end annotation
+.end method
+
+.method public abstract ʼ(Ljava/lang/String;)Lfj1$ʽ;
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/ˉˉ;
+    .end annotation
+.end method
+
+.method public abstract ʽ(Ljava/lang/String;)Lfj1$ʽ;
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/ˉˉ;
+    .end annotation
+.end method
+
+.method public abstract ʾ(Ljava/lang/String;)Lfj1$ʽ;
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/ˉˉ;
+    .end annotation
+.end method
+
+.method public abstract ʿ(Ljava/lang/String;)Lfj1$ʽ;
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/ˉˉ;
+    .end annotation
+.end method
+
+.method public abstract ˆ(Lfj1$ʿ;)Lfj1$ʽ;
+    .annotation build Landroidx/annotation/ˉˉ;
+    .end annotation
+.end method
+
+.method public abstract ˈ(I)Lfj1$ʽ;
+    .annotation build Landroidx/annotation/ˉˉ;
+    .end annotation
+.end method
+
+.method public abstract ˉ(Ljava/lang/String;)Lfj1$ʽ;
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/ˉˉ;
+    .end annotation
+.end method
+
+.method public abstract ˊ(Lfj1$ˆ;)Lfj1$ʽ;
+    .param p1    # Lfj1$ˆ;
+        .annotation build Landroidx/annotation/ˉˉ;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/ˉˉ;
+    .end annotation
+.end method

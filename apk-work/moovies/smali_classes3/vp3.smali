@@ -1,0 +1,144 @@
+.class public abstract Lvp3;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcy2;
+.implements Loz2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lcy2<",
+        "TT;>;",
+        "Loz2;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final ʼʼ:La13;
+
+.field private final ʽʽ:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Loz2;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    iput-object v0, p0, Lvp3;->ʽʽ:Ljava/util/concurrent/atomic/AtomicReference;
+
+    new-instance v0, La13;
+
+    invoke-direct {v0}, La13;-><init>()V
+
+    iput-object v0, p0, Lvp3;->ʼʼ:La13;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final ʻ(Loz2;)V
+    .locals 1
+    .param p1    # Loz2;
+        .annotation build Ljz2;
+        .end annotation
+    .end param
+
+    const-string v0, "resource is null"
+
+    invoke-static {p1, v0}, Le13;->ˈ(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    iget-object v0, p0, Lvp3;->ʼʼ:La13;
+
+    invoke-virtual {v0, p1}, La13;->ʼ(Loz2;)Z
+
+    return-void
+.end method
+
+.method protected ʼ()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final ʽ()Z
+    .locals 1
+
+    iget-object v0, p0, Lvp3;->ʽʽ:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loz2;
+
+    invoke-static {v0}, Ly03;->ʼ(Loz2;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final ʿ(Loz2;)V
+    .locals 2
+    .param p1    # Loz2;
+        .annotation build Ljz2;
+        .end annotation
+    .end param
+
+    iget-object v0, p0, Lvp3;->ʽʽ:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-static {v0, p1, v1}, Luo3;->ʽ(Ljava/util/concurrent/atomic/AtomicReference;Loz2;Ljava/lang/Class;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p0}, Lvp3;->ʼ()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final ˈ()V
+    .locals 1
+
+    iget-object v0, p0, Lvp3;->ʽʽ:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-static {v0}, Ly03;->ʻ(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lvp3;->ʼʼ:La13;
+
+    invoke-virtual {v0}, La13;->ˈ()V
+
+    :cond_0
+    return-void
+.end method

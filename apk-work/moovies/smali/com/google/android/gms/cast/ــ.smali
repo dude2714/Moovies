@@ -1,0 +1,49 @@
+.class final Lcom/google/android/gms/cast/ــ;
+.super Lcom/google/android/gms/cast/ᵎᵎ;
+
+
+# instance fields
+.field final synthetic ᵔ:Lorg/json/JSONObject;
+
+.field final synthetic ᵢ:Lcom/google/android/gms/cast/RemoteMediaPlayer;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/cast/RemoteMediaPlayer;Lcom/google/android/gms/common/api/GoogleApiClient;Lorg/json/JSONObject;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/android/gms/cast/ــ;->ᵢ:Lcom/google/android/gms/cast/RemoteMediaPlayer;
+
+    iput-object p3, p0, Lcom/google/android/gms/cast/ــ;->ᵔ:Lorg/json/JSONObject;
+
+    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/cast/ᵎᵎ;-><init>(Lcom/google/android/gms/cast/RemoteMediaPlayer;Lcom/google/android/gms/common/api/GoogleApiClient;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method final zza(Lcom/google/android/gms/cast/internal/zzw;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/cast/internal/zzaq;
+        }
+    .end annotation
+
+    iget-object p1, p0, Lcom/google/android/gms/cast/ــ;->ᵢ:Lcom/google/android/gms/cast/RemoteMediaPlayer;
+
+    invoke-static {p1}, Lcom/google/android/gms/cast/RemoteMediaPlayer;->ʽ(Lcom/google/android/gms/cast/RemoteMediaPlayer;)Lcom/google/android/gms/cast/internal/zzas;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Lcom/google/android/gms/cast/ᵎᵎ;->ʿ()Lcom/google/android/gms/cast/internal/zzau;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/google/android/gms/cast/ــ;->ᵔ:Lorg/json/JSONObject;
+
+    invoke-virtual {p1, v0, v1}, Lcom/google/android/gms/cast/internal/zzas;->zzq(Lcom/google/android/gms/cast/internal/zzau;Lorg/json/JSONObject;)J
+
+    return-void
+.end method

@@ -1,0 +1,209 @@
+.class abstract Ls61;
+.super Lq61;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ls61$ʼ;,
+        Ls61$ʻ;
+    }
+.end annotation
+
+.annotation runtime Lse1;
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lq61;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public ʻ(Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lb71;
+    .locals 0
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq61;->ʿ([B)Lb71;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public ʼ(Ljava/lang/CharSequence;)Lb71;
+    .locals 4
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result v0
+
+    mul-int/lit8 v1, v0, 0x2
+
+    invoke-static {v1}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
+
+    move-result-object v1
+
+    sget-object v2, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
+
+    invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v0, :cond_0
+
+    invoke-interface {p1, v2}, Ljava/lang/CharSequence;->charAt(I)C
+
+    move-result v3
+
+    invoke-virtual {v1, v3}, Ljava/nio/ByteBuffer;->putChar(C)Ljava/nio/ByteBuffer;
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->array()[B
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq61;->ʿ([B)Lb71;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public ʾ(I)Ld71;
+    .locals 1
+
+    if-ltz p1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-static {v0}, Lgu0;->ʾ(Z)V
+
+    new-instance v0, Ls61$ʻ;
+
+    invoke-direct {v0, p0, p1}, Ls61$ʻ;-><init>(Ls61;I)V
+
+    return-object v0
+.end method
+
+.method public ˆ()Ld71;
+    .locals 1
+
+    const/16 v0, 0x20
+
+    invoke-virtual {p0, v0}, Ls61;->ʾ(I)Ld71;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public ˉ(I)Lb71;
+    .locals 2
+
+    const/4 v0, 0x4
+
+    invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
+
+    move-result-object v0
+
+    sget-object v1, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
+
+    invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->array()[B
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq61;->ʿ([B)Lb71;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public ˋ(Ljava/nio/ByteBuffer;)Lb71;
+    .locals 1
+
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
+
+    move-result v0
+
+    invoke-virtual {p0, v0}, Ls61;->ʾ(I)Ld71;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Ld71;->ˋ(Ljava/nio/ByteBuffer;)Ld71;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ld71;->ـ()Lb71;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public ˎ(J)Lb71;
+    .locals 2
+
+    const/16 v0, 0x8
+
+    invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
+
+    move-result-object v0
+
+    sget-object v1, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
+
+    invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1, p2}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->array()[B
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq61;->ʿ([B)Lb71;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public abstract ˏ([BII)Lb71;
+.end method

@@ -1,0 +1,359 @@
+.class final Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;
+.super Lli4;
+
+# interfaces
+.implements Lag4;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/unity3d/services/core/di/ServiceProvider$initialize$1;->invoke(Lcom/unity3d/services/core/di/ServicesRegistry;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lli4;",
+        "Lag4<",
+        "Lcom/unity3d/ads/core/domain/HandleGatewayAdResponse;",
+        ">;"
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nServiceProvider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ServiceProvider.kt\ncom/unity3d/services/core/di/ServiceProvider$initialize$1$190\n+ 2 ServicesRegistry.kt\ncom/unity3d/services/core/di/ServicesRegistry\n*L\n1#1,1181:1\n57#2,3:1182\n57#2,3:1185\n57#2,3:1188\n57#2,3:1191\n57#2,3:1194\n57#2,3:1197\n57#2,3:1200\n57#2,3:1203\n57#2,3:1206\n57#2,3:1209\n57#2,3:1212\n57#2,3:1215\n*S KotlinDebug\n*F\n+ 1 ServiceProvider.kt\ncom/unity3d/services/core/di/ServiceProvider$initialize$1$190\n*L\n1114#1:1182,3\n1115#1:1185,3\n1116#1:1188,3\n1117#1:1191,3\n1118#1:1194,3\n1119#1:1197,3\n1120#1:1200,3\n1121#1:1203,3\n1122#1:1206,3\n1123#1:1209,3\n1124#1:1212,3\n1125#1:1215,3\n*E\n"
+.end annotation
+
+.annotation runtime Ln34;
+    d1 = {
+        "\u0000\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0002"
+    }
+    d2 = {
+        "<anonymous>",
+        "Lcom/unity3d/ads/core/domain/HandleGatewayAdResponse;",
+        "invoke"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lpj4;
+    value = {
+        "SMAP\nServiceProvider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ServiceProvider.kt\ncom/unity3d/services/core/di/ServiceProvider$initialize$1$190\n+ 2 ServicesRegistry.kt\ncom/unity3d/services/core/di/ServicesRegistry\n*L\n1#1,1181:1\n57#2,3:1182\n57#2,3:1185\n57#2,3:1188\n57#2,3:1191\n57#2,3:1194\n57#2,3:1197\n57#2,3:1200\n57#2,3:1203\n57#2,3:1206\n57#2,3:1209\n57#2,3:1212\n57#2,3:1215\n*S KotlinDebug\n*F\n+ 1 ServiceProvider.kt\ncom/unity3d/services/core/di/ServiceProvider$initialize$1$190\n*L\n1114#1:1182,3\n1115#1:1185,3\n1116#1:1188,3\n1117#1:1191,3\n1118#1:1194,3\n1119#1:1197,3\n1120#1:1200,3\n1121#1:1203,3\n1122#1:1206,3\n1123#1:1209,3\n1124#1:1212,3\n1125#1:1215,3\n*E\n"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+
+# direct methods
+.method constructor <init>(Lcom/unity3d/services/core/di/ServicesRegistry;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lli4;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Lcom/unity3d/ads/core/domain/HandleGatewayAdResponse;
+    .locals 17
+    .annotation build Lro5;
+    .end annotation
+
+    move-object/from16 v0, p0
+
+    new-instance v14, Lcom/unity3d/ads/core/domain/AndroidHandleGatewayAdResponse;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v2, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v3, Lcom/unity3d/ads/core/data/repository/AdRepository;
+
+    invoke-static {v3}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v3
+
+    const-string v4, ""
+
+    invoke-direct {v2, v4, v3}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v2}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v2, v1
+
+    check-cast v2, Lcom/unity3d/ads/core/data/repository/AdRepository;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v3, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v5, Lcom/unity3d/ads/core/domain/AndroidGetWebViewContainerUseCase;
+
+    invoke-static {v5}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v5
+
+    invoke-direct {v3, v4, v5}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v3}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v3, v1
+
+    check-cast v3, Lcom/unity3d/ads/core/domain/AndroidGetWebViewContainerUseCase;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v5, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v6, Lcom/unity3d/ads/core/domain/GetWebViewBridgeUseCase;
+
+    invoke-static {v6}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v6
+
+    invoke-direct {v5, v4, v6}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v5}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v5, v1
+
+    check-cast v5, Lcom/unity3d/ads/core/domain/GetWebViewBridgeUseCase;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v6, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v7, Lcom/unity3d/ads/core/data/repository/DeviceInfoRepository;
+
+    invoke-static {v7}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v7
+
+    invoke-direct {v6, v4, v7}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v6}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v6, v1
+
+    check-cast v6, Lcom/unity3d/ads/core/data/repository/DeviceInfoRepository;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v7, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v8, Lcom/unity3d/ads/core/domain/HandleInvocationsFromAdViewer;
+
+    invoke-static {v8}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v8
+
+    invoke-direct {v7, v4, v8}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v7}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v7, v1
+
+    check-cast v7, Lcom/unity3d/ads/core/domain/HandleInvocationsFromAdViewer;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v8, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v9, Lcom/unity3d/ads/core/data/repository/CampaignRepository;
+
+    invoke-static {v9}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v9
+
+    invoke-direct {v8, v4, v9}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v8}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v8, v1
+
+    check-cast v8, Lcom/unity3d/ads/core/data/repository/CampaignRepository;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v9, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v10, Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;
+
+    invoke-static {v10}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v10
+
+    invoke-direct {v9, v4, v10}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v9}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v9, v1
+
+    check-cast v9, Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v10, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v11, Lcom/unity3d/ads/core/domain/events/GetOperativeEventApi;
+
+    invoke-static {v11}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v11
+
+    invoke-direct {v10, v4, v11}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v10}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v10, v1
+
+    check-cast v10, Lcom/unity3d/ads/core/domain/events/GetOperativeEventApi;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v11, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v12, Lcom/unity3d/ads/core/domain/GetLatestWebViewConfiguration;
+
+    invoke-static {v12}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v12
+
+    invoke-direct {v11, v4, v12}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v11}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v11, v1
+
+    check-cast v11, Lcom/unity3d/ads/core/domain/GetLatestWebViewConfiguration;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v12, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v13, Lcom/unity3d/ads/adplayer/AdPlayerScope;
+
+    invoke-static {v13}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v13
+
+    invoke-direct {v12, v4, v13}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v12}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v12, v1
+
+    check-cast v12, Lcom/unity3d/ads/adplayer/AdPlayerScope;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v13, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v15, Lcom/unity3d/ads/core/domain/GetAdPlayer;
+
+    invoke-static {v15}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v15
+
+    invoke-direct {v13, v4, v15}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v13}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v13, v1
+
+    check-cast v13, Lcom/unity3d/ads/core/domain/GetAdPlayer;
+
+    iget-object v1, v0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    new-instance v15, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v16, Lcom/unity3d/ads/core/domain/CacheWebViewAssets;
+
+    invoke-static/range {v16 .. v16}, Ljj4;->ʾ(Ljava/lang/Class;)Lhm4;
+
+    move-result-object v0
+
+    invoke-direct {v15, v4, v0}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;Lhm4;)V
+
+    invoke-virtual {v1, v15}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/unity3d/ads/core/domain/CacheWebViewAssets;
+
+    move-object v1, v14
+
+    move-object v4, v5
+
+    move-object v5, v6
+
+    move-object v6, v7
+
+    move-object v7, v8
+
+    move-object v8, v9
+
+    move-object v9, v10
+
+    move-object v10, v11
+
+    move-object v11, v12
+
+    move-object v12, v13
+
+    move-object v13, v0
+
+    invoke-direct/range {v1 .. v13}, Lcom/unity3d/ads/core/domain/AndroidHandleGatewayAdResponse;-><init>(Lcom/unity3d/ads/core/data/repository/AdRepository;Lcom/unity3d/ads/core/domain/AndroidGetWebViewContainerUseCase;Lcom/unity3d/ads/core/domain/GetWebViewBridgeUseCase;Lcom/unity3d/ads/core/data/repository/DeviceInfoRepository;Lcom/unity3d/ads/core/domain/HandleInvocationsFromAdViewer;Lcom/unity3d/ads/core/data/repository/CampaignRepository;Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;Lcom/unity3d/ads/core/domain/events/GetOperativeEventApi;Lcom/unity3d/ads/core/domain/GetLatestWebViewConfiguration;Lcom/unity3d/ads/adplayer/AdPlayerScope;Lcom/unity3d/ads/core/domain/GetAdPlayer;Lcom/unity3d/ads/core/domain/CacheWebViewAssets;)V
+
+    return-object v14
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$190;->invoke()Lcom/unity3d/ads/core/domain/HandleGatewayAdResponse;
+
+    move-result-object v0
+
+    return-object v0
+.end method

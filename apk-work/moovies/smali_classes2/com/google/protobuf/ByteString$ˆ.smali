@@ -1,0 +1,30 @@
+.class interface abstract Lcom/google/protobuf/ByteString$ˆ;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/protobuf/ByteString;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x60a
+    name = "\u02c6"
+.end annotation
+
+
+# virtual methods
+.method public abstract ʻ([BII)[B
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bytes",
+            "offset",
+            "size"
+        }
+    .end annotation
+.end method

@@ -1,0 +1,19 @@
+.class interface abstract Lcom/ironsource/sdk/controller/c;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/ironsource/cf;
+
+
+# virtual methods
+.method public abstract b()V
+.end method
+
+.method public abstract b(Ljava/lang/String;)V
+.end method
+
+.method public abstract c()V
+.end method
+
+.method public abstract c(Ljava/lang/String;)V
+.end method

@@ -1,0 +1,4 @@
+1.0.0-initial-fork
+Base: Moovies v3.6.23 (RD-only branch)
+Created: 2026-06-22
+Status: Standalone extraction

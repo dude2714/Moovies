@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorPrimaryDark" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:background="@drawable/background_down_dialog_bottom" android:layout_width="98.0dip" android:layout_height="4.0dip" android:layout_marginTop="12.0dip" />
+    <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="12.0dip" android:text="Select Player" />
+    <FrameLayout android:orientation="horizontal" android:id="@id/vPlayerTwo" android:background="@drawable/background_install_player" android:padding="12.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/imgPlayerTwo" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/icon_launcher_round_bear" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvTitlePlayerTwo" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textStyle="italic" android:textColor="@color/larva_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvSubtitlePlayerTwo" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="Recommend" android:maxLines="2" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:orientation="horizontal" android:id="@id/vPlayerOne" android:background="@drawable/background_install_player" android:padding="12.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/imgPlayerOne" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/icon_launcher_vibe" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tvTitlePlayerOne" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/sub_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvSubtitlePlayerOne" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="Fast and Lite Player." android:maxLines="2" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:orientation="horizontal" android:id="@id/vPlayerThree" android:background="@drawable/background_install_player" android:padding="12.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/imgPlayerThree" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/mx_launcher" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvTitlePlayerThree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MX Player" />
+                <TextView android:textSize="14.0sp" android:textStyle="italic" android:textColor="@color/sub_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvSubtitlePlayerThree" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/vPlay" android:background="@drawable/background_play" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="32.0dip" android:layout_below="@id/tvOverview">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/tvPlay" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select and play" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/baseline_play_arrow_black_24dp" android:layout_toRightOf="@id/tvPlay" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

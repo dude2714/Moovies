@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="com.terrariumtv.app" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="25" android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <queries>
+        <package android:name="com.nx.video.player"/>
+        <package android:name="com.acb.nvplayer"/>
+        <package android:name="com.vidpulse.player"/>
+        <package android:name="vnm.oea.vibeplayer"/>
+        <package android:name="com.mxtech.videoplayer.pro"/>
+        <package android:name="com.mxtech.videoplayer.ad"/>
+        <package android:name="org.videolan.vlc"/>
+        <package android:name="com.ae.video.bplayer"/>
+        <package android:name="com.one.downloader"/>
+        <package android:name="com.dv.adm"/>
+        <package android:name="com.dv.adm.old"/>
+        <package android:name="com.dv.adm.pay"/>
+    </queries>
+    <permission android:name="com.bweather.forecast.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.bweather.forecast.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/logotv" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:logo="@drawable/logotv" android:name="com.bweather.forecast.TraktApplication" android:requestLegacyExternalStorage="true" android:roundIcon="@drawable/ic_launcher" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="true" android:name="com.bweather.forecast.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.MainActivity" android:screenOrientation="fullUser" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.bweather.forecast.DetailActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.FAQActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.resolver.RecaptchaResolver"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.LiteModeActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.CastDetailActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.lite_mote_ui.LiteModeDetailActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.lite_mote_ui.LiteModeLinkActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.lite_mote_ui.LiteModeSearchDetailActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.EpisodeActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.SearchActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.SearchDetailActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.WebViewActivityTestSource"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.bweather.forecast.SettingActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.LoginRealDebridActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.LoginRealDebridMobileActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.DetailCollectionActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.CategoryDetailsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.bweather.forecast.LinkActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.RecentActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.WebCookieActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.LoginTraktActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.LoginAllDebridActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.LoginTraktLand"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.WatchListActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.CollectionActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.HdReleaseActivity"/>
+        <activity android:exported="false" android:name="com.bweather.forecast.TrailerActivity" android:screenOrientation="fullSensor"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.bweather.forecast.SubTitleActivity"/>
+        <provider android:authorities="com.bweather.forecast.DataPlayProvider" android:exported="true" android:grantUriPermissions="true" android:multiprocess="true" android:name="com.bweather.forecast.player_provider.BeePlayerProvider"/>
+        <receiver android:exported="true" android:name="com.bweather.forecast.receiver.ReceiverUpdateRecent">
+            <intent-filter>
+                <action android:name="BeeTV.refresh.recent"/>
+                <action android:name="BeeTV.refresh.recent.mate"/>
+                <action android:name="BeeTV.refresh.recent.super_bee_content"/>
+                <action android:name="BeeTV.refresh.recent.bplayer"/>
+                <action android:name="BeeTV.refresh.recent.nvplayer"/>
+                <action android:name="BeeTV.refresh.recent.vidpulse"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.bweather.forecast.receiver.AlarmReceiver"/>
+        <receiver android:description="@string/app_name" android:exported="true" android:label="@string/app_name" android:name="com.bweather.forecast.seriesguide.ExampleExtensionReceiver">
+            <intent-filter>
+                <action android:name="com.battlelancer.seriesguide.api.SeriesGuideExtension"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.bweather.forecast.seriesguide.ExampleExtensionService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:description="@string/app_name" android:enabled="@bool/isNotOreoOrHigher" android:exported="true" android:label="@string/app_name" android:name="com.bweather.forecast.seriesguide.ExampleExtension">
+            <intent-filter>
+                <action android:name="com.battlelancer.seriesguide.api.SeriesGuideExtension"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.bweather.forecast.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.bweather.forecast.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="pl.droidsonroids.casty.CastOptionsProvider"/>
+        <activity android:name="pl.droidsonroids.casty.ExpandedControlsActivity" android:theme="@style/Theme.CastVideosDark"/>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.yanzhenjie.permission.PermissionActivity" android:theme="@style/permission_PermissionActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+    </application>
+</manifest>
