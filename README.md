@@ -36,3 +36,25 @@ git add release.json index.html README.md
 git commit -m "Publish Moovies v3.6.23"
 git push
 ```
+
+## Legal Provider Workflow
+
+This repository now includes a legal-provider config path for approved APIs/feeds.
+
+- Example config: `providers/legal-providers.example.json`
+- Validate config: `scripts/Validate-LegalProviders.ps1`
+- Build APK with config asset: `scripts/Build-LegalProviders-Apk.ps1`
+
+### Validate Provider Config
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\Validate-LegalProviders.ps1 -ConfigPath .\providers\legal-providers.example.json
+```
+
+### Build APK With Provider Asset
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\Build-LegalProviders-Apk.ps1 -ConfigPath .\providers\legal-providers.example.json -Sign
+```
+
+This copies your config into `apk-work/recover-v363/assets/legal_providers.json`, rebuilds, and optionally signs.

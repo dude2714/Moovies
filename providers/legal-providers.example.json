@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedUtc": "2026-06-23T00:00:00Z",
+  "providers": [
+    {
+      "id": "archive_org",
+      "name": "Internet Archive",
+      "enabled": true,
+      "type": "catalog_api",
+      "baseUrl": "https://archive.org",
+      "searchPath": "/advancedsearch.php",
+      "detailsPath": "/metadata/{identifier}",
+      "healthPath": "/services/search/v1/scrape",
+      "auth": {
+        "mode": "none"
+      },
+      "limits": {
+        "timeoutMs": 12000,
+        "retries": 2,
+        "backoffMs": 700,
+        "rateLimitPerMinute": 30
+      },
+      "headers": {
+        "Accept": "application/json"
+      },
+      "notes": "Public-domain catalog example"
+    },
+    {
+      "id": "example_partner",
+      "name": "Example Partner",
+      "enabled": false,
+      "type": "partner_api",
+      "baseUrl": "https://api.example.com",
+      "searchPath": "/v1/search",
+      "detailsPath": "/v1/items/{id}",
+      "healthPath": "/v1/health",
+      "auth": {
+        "mode": "api_key_header",
+        "headerName": "X-API-Key",
+        "envKeyName": "MOVIES_PARTNER_API_KEY"
+      },
+      "limits": {
+        "timeoutMs": 10000,
+        "retries": 2,
+        "backoffMs": 500,
+        "rateLimitPerMinute": 60
+      },
+      "headers": {
+        "Accept": "application/json"
+      },
+      "notes": "Enable only after written provider authorization"
+    }
+  ]
+}
