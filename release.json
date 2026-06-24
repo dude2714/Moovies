@@ -1,8 +1,8 @@
 ﻿{
     "version":  "v3.6.23",
-    "updatedUtc":  "2026-06-24T00:47:13Z",
+    "updatedUtc":  "2026-06-24T00:59:07Z",
     "apkFile":  "Moovies-v3.6.23.apk",
     "sizeBytes":  17530811,
-    "sha256":  "5E87BB9B6CCDDC4D136706A4B294D4CEC9C15F35ADD242DFCDD7938B9F773C39",
-    "notes":  "RD + Fluid build with safe Moovies branding and backup/restore naming path update (keeps fallback read support for old BeeTV backups)."
+    "sha256":  "2EBE3F347418031FC140211998BF1329946240283079D5212013D4C34D34A18F",
+    "notes":  "Version & icon lock: v3.6.23 with local drawer icon (forces ic_drawer.jpg, skips remote override). Prevents config reversion."
 }
