@@ -1,8 +1,8 @@
 ﻿{
     "version":  "v3.6.23",
-    "updatedUtc":  "2026-06-08T00:00:00Z",
+    "updatedUtc":  "2026-06-24T00:59:07Z",
     "apkFile":  "Moovies-v3.6.23.apk",
     "sizeBytes":  17530811,
-    "sha256":  "57D82142B86872E995766A9482E95D363504EDA374B0A43C7DD169AEEE6A6EF8",
-    "notes":  "Patched: default player chooser (MX/Fluid/VLC) visible in settings; TV Shows Animation category added; Unity Ads display disabled (no interstitials)."
+    "sha256":  "2EBE3F347418031FC140211998BF1329946240283079D5212013D4C34D34A18F",
+    "notes":  "Version & icon lock: v3.6.23 with local drawer icon (forces ic_drawer.jpg, skips remote override). Prevents config reversion."
 }

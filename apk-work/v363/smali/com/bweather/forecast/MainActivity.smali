@@ -5724,7 +5724,7 @@
 
     if-nez v0, :cond_0
 
-    const-string v0, "BeeTV requires storage permission to sync and backup data."
+    const-string v0, "Moovies requires storage permission to sync and backup data."
 
     invoke-virtual {p0, p1, v0}, Lcom/bweather/forecast/MainActivity;->ʾˆ(ILjava/lang/String;)V
 
@@ -5900,11 +5900,25 @@
 
     new-instance v2, Ljava/io/File;
 
-    const-string v3, "/storage/emulated/0/BeeTV/Backup/recent.txt"
+    const-string v3, "/storage/emulated/0/Moovies/Backup/recent.txt"
 
     const/4 v4, 0x5
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v3
+
+    if-nez v3, :cond_moovies_recent
+
+    new-instance v2, Ljava/io/File;
+
+    const-string v3, "/storage/emulated/0/BeeTV/Backup/recent.txt"
+
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    :cond_moovies_recent
 
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -6004,9 +6018,23 @@
     :try_start_0
     new-instance v2, Ljava/io/File;
 
+    const-string v3, "/storage/emulated/0/Moovies/Backup/watched.txt"
+
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v3
+
+    if-nez v3, :cond_moovies_watched
+
+    new-instance v2, Ljava/io/File;
+
     const-string v3, "/storage/emulated/0/BeeTV/Backup/watched.txt"
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    :cond_moovies_watched
 
     const/4 v5, 0x3
 
@@ -6157,11 +6185,25 @@
 
     const/4 v4, 0x2
 
-    const-string v3, "/storage/emulated/0/BeeTV/Backup/watchlist.txt"
+    const-string v3, "/storage/emulated/0/Moovies/Backup/watchlist.txt"
 
     const/4 v4, 0x5
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v3
+
+    if-nez v3, :cond_moovies_watchlist
+
+    new-instance v2, Ljava/io/File;
+
+    const-string v3, "/storage/emulated/0/BeeTV/Backup/watchlist.txt"
+
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    :cond_moovies_watchlist
 
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
