@@ -1795,7 +1795,7 @@
 
     check-cast v0, Lcom/bweather/forecast/SettingActivity;
 
-    const-string v1, "BeeTV requires storage permission to sync and backup data."
+    const-string v1, "Moovies requires storage permission to sync and backup data."
 
     invoke-virtual {v0, p1, v1}, Lcom/bweather/forecast/SettingActivity;->ʾʾ(ILjava/lang/String;)V
 
@@ -1880,9 +1880,23 @@
 
     const-string v3, ".TBue/b/oBt0eVxmctpcdn/reg/eeuletksa/reatat"
 
+    const-string v3, "/storage/emulated/0/Moovies/Backup/recent.txt"
+
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v3
+
+    if-nez v3, :cond_moovies_recent
+
+    new-instance v2, Ljava/io/File;
+
     const-string v3, "/storage/emulated/0/BeeTV/Backup/recent.txt"
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    :cond_moovies_recent
 
     const/4 v4, 0x4
 
@@ -2017,9 +2031,23 @@
 
     const-string v3, "etah/t.teB/s/pxBtldeaac/dT/weVtugakcuoe/term"
 
+    const-string v3, "/storage/emulated/0/Moovies/Backup/watched.txt"
+
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v3
+
+    if-nez v3, :cond_moovies_watched
+
+    new-instance v2, Ljava/io/File;
+
     const-string v3, "/storage/emulated/0/BeeTV/Backup/watched.txt"
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    :cond_moovies_watched
 
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -2211,11 +2239,25 @@
 
     const-string v3, "tlucpigt/tltoe/trutesd0e/asVaamwkB.//xB/hectTe"
 
-    const-string v3, "/storage/emulated/0/BeeTV/Backup/watchlist.txt"
+    const-string v3, "/storage/emulated/0/Moovies/Backup/watchlist.txt"
 
     const/4 v4, 0x1
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v3
+
+    if-nez v3, :cond_moovies_watchlist
+
+    new-instance v2, Ljava/io/File;
+
+    const-string v3, "/storage/emulated/0/BeeTV/Backup/watchlist.txt"
+
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    :cond_moovies_watchlist
 
     const/4 v4, 0x4
 
@@ -8105,7 +8147,7 @@
 
     new-instance p1, Ljava/io/File;
 
-    const-string v0, "/storage/emulated/0/BeeTV/Backup"
+    const-string v0, "/storage/emulated/0/Moovies/Backup"
 
     invoke-direct {p1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 

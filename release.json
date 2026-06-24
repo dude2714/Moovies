@@ -1,8 +1,8 @@
 ﻿{
     "version":  "v3.6.23",
-    "updatedUtc":  "2026-06-24T00:30:11Z",
+    "updatedUtc":  "2026-06-24T00:47:13Z",
     "apkFile":  "Moovies-v3.6.23.apk",
     "sizeBytes":  17530811,
-    "sha256":  "848D7C81865A9482FC9E747B12C7BD3FFE3E73ADC97BD360AEB8D74AE9ACF7C0",
-    "notes":  "RD update with standalone Fluid player fork plus safe user-visible Moovies branding pass."
+    "sha256":  "5E87BB9B6CCDDC4D136706A4B294D4CEC9C15F35ADD242DFCDD7938B9F773C39",
+    "notes":  "RD + Fluid build with safe Moovies branding and backup/restore naming path update (keeps fallback read support for old BeeTV backups)."
 }
